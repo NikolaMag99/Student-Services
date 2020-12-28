@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<VBox fx:id="menu" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="studsluzba.client.fxmlcontrollers.MenuBarController">
+    <MenuBar fx:id="menuBar" style="-fx-background-color: #ADD8E6;">
+        <Menu text="Pretraži">
+            <items>
+                <MenuItem text="Studenti" onAction="#findStudent"/>
+                <MenuItem text="Nastavnici" onAction="#findNastavnik"/>
+                <MenuItem text="Ispiti" onAction="#findIspit"/>
+                <MenuItem text="Studijski program" onAction="#findStudProgram"/>
+            </items>
+        </Menu>
+        <Menu text="Novi">
+            <items>
+                <MenuItem text="Student" onAction="#openNewStudent"/>
+                <MenuItem text="Slusa predmet" onAction="#newSlusaPredmet"/>
+                <MenuItem text="Ispit" onAction="#newIspit"/>
+                <MenuItem text="Skolska godina" onAction="#novaSkolska"/>
+            </items>
+        </Menu>
+        <Menu text="Administracija">
+            <items>
+                <MenuItem text="Studijski programi" onAction="#openStudProgrami"/>
+                <MenuItem text="Import" onAction="#openImport"/>
+            </items>
+        </Menu>
+        <Menu text="Izvestaji">
+            <items>
+                <MenuItem text="Spiskovi studenata" onAction="#openSpiskoviStudenataIzvestaj"/>
+            </items>
+        </Menu>
+    </MenuBar>
+
+</VBox>

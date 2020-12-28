@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.*?>
+<BorderPane fx:id="menu" prefHeight="428.0" prefWidth="581.0" xmlns="http://javafx.com/javafx/8.0.171"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="studsluzba.client.fxmlcontrollers.NewSkolskaController">
+
+    <top>
+        <fx:include source="menuBar.fxml"/>
+    </top>
+    <center>
+        <GridPane alignment="center" hgap="10" vgap="10">
+            <Label text="Nova skolska" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+            <TextField fx:id="novaSkolska" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+
+            <HBox alignment="bottom_right" spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                <Button onAction="#addSkolska" text="Sačuvaj"/>
+            </HBox>
+        </GridPane>
+    </center>
+</BorderPane>

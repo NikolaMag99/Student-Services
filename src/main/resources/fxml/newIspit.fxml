@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane fx:id="menu" prefHeight="428.0" prefWidth="581.0" xmlns="http://javafx.com/javafx/8.0.171"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="studsluzba.client.fxmlcontrollers.NewIspitController">
+
+    <top>
+        <fx:include source="menuBar.fxml"/>
+    </top>
+    <center>
+        <GridPane alignment="center" hgap="10" vgap="10">
+            <Label text="Sifra ispita" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+            <TextField fx:id="sifraIspitaTf" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+            <Label text="Datum odrzavanja" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+            <DatePicker fx:id="datumOdrzavanjaTf" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+            <Label text="Vreme pocetka" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+            <TextField fx:id="vremePocetkaTf" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+            <Label text="Izaberi ispitni rok" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+            <ComboBox fx:id="ispitniRokCb" GridPane.columnIndex="2"
+                      GridPane.rowIndex="4"/>
+            <HBox alignment="bottom_right" spacing="10" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                <Button onAction="#handleOpenPodaci" text="Dodaj ispitni rok"/>
+            </HBox>
+            <Label text="Predmet" GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+            <ComboBox fx:id="predmetCb" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+            <Label text="Nastavnik" GridPane.columnIndex="0" GridPane.rowIndex="6"/>
+            <ComboBox fx:id="nastavnikCb" GridPane.columnIndex="1" GridPane.rowIndex="6"/>
+            <HBox alignment="bottom_right" spacing="10" GridPane.columnIndex="0" GridPane.rowIndex="7">
+                <Button text="Dodaj ispit" onAction="#addIspit"/>
+            </HBox>
+        </GridPane>
+    </center>
+    <bottom>
+
+    </bottom>
+
+</BorderPane>

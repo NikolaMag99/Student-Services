@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<BorderPane fx:id="mainPane" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="studsluzba.client.fxmlcontrollers.OpenPodaciOIspituController">
+
+    <center>
+        <fx:include source="openPodaciOIspitu.fxml"/>
+    </center>
+
+    <bottom>
+
+    </bottom>
+
+</BorderPane>

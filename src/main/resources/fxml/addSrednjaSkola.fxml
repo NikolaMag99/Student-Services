@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<GridPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" alignment="center" hgap="10"
+          vgap="10" fx:controller="studsluzba.client.fxmlcontrollers.AddSrednjaSkolaController">
+
+    <Label text="Naziv škole" GridPane.halignment="RIGHT" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+    <TextField fx:id="nazivNoveSrednjeSkoleTf" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+    <Label text="Mesto" GridPane.halignment="RIGHT" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+    <ComboBox fx:id="mestoNoveSrednjeSkoleCb" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+    <Label text="Tip" GridPane.halignment="RIGHT" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+    <ComboBox fx:id="tipNoveSrednjeSkoleCb" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+    <Button onAction="#addSrednjaSkola" text="Dodaj" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+
+
+</GridPane>

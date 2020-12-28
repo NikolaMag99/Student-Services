@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<TabPane xmlns:fx="http://javafx.com/fxml" fx:controller="studsluzba.client.fxmlcontrollers.FindStudProgramController">
+    <Tab text="Pretraga po Studijskom programu">
+        <BorderPane>
+            <center>
+                <GridPane alignment="center" hgap="10" vgap="10">
+                    <Label text="Izaberi Stud program" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+                    <ComboBox fx:id="pretragaSmerCb" GridPane.columnIndex="1"
+                              GridPane.rowIndex="0"/>
+
+                    <HBox alignment="bottom_right" spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                        <Button text="Prikazi" onAction="#showStudProgPred"/>
+                    </HBox>
+                </GridPane>
+            </center>
+        </BorderPane>
+    </Tab>
+
+</TabPane>

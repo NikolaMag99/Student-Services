@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1"
+          xmlns:fx="http://javafx.com/fxml/1" fx:controller="studsluzba.client.fxmlcontrollers.OpenDosijeController">
+
+    <Label text="Ime:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+    <Text fx:id="imeStudenta" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+    <Label text="Prezime" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+    <Text fx:id="prezimeStudenta" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+    <Label text="Indeks" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+    <Text fx:id="indeksStudenta" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+    <Label text="Srednje ime" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+    <Text fx:id="srednjeIme" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+    <Label text="jmbg" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+    <Text fx:id="jmbg" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+    <Label text="Datum rodjenja" GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+    <Text fx:id="datumRodjenjaDp" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+    <Label text="Priv mejl" GridPane.columnIndex="0" GridPane.rowIndex="6"/>
+    <Text fx:id="emailTf" GridPane.columnIndex="1" GridPane.rowIndex="6"/>
+    <Label text="Stud mejl" GridPane.columnIndex="0" GridPane.rowIndex="7"/>
+    <Text fx:id="studemailTf" GridPane.columnIndex="1" GridPane.rowIndex="7"/>
+    <Label text="Pol" GridPane.columnIndex="0" GridPane.rowIndex="8"/>
+    <Text fx:id="pol" GridPane.columnIndex="1" GridPane.rowIndex="8"/>
+    <Label text="br telefona" GridPane.columnIndex="0" GridPane.rowIndex="9"/>
+    <Text fx:id="brojTelefonaTf" GridPane.columnIndex="1" GridPane.rowIndex="9"/>
+    <Label text="Ulica" GridPane.columnIndex="0" GridPane.rowIndex="10"/>
+    <Text fx:id="ulica" GridPane.columnIndex="1" GridPane.rowIndex="10"/>
+    <Label text="Mesto " GridPane.columnIndex="0" GridPane.rowIndex="11"/>
+    <Text fx:id="mestoStanovanja" GridPane.columnIndex="1" GridPane.rowIndex="11"/>
+    <Label text="br ulice" GridPane.columnIndex="0" GridPane.rowIndex="12"/>
+    <Text fx:id="brojUlice" GridPane.columnIndex="1" GridPane.rowIndex="12"/>
+    <Label text="Mesto rodjenja" GridPane.columnIndex="0" GridPane.rowIndex="13"/>
+    <Text fx:id="mestoRodjenja" GridPane.columnIndex="1" GridPane.rowIndex="13"/>
+    <Label text="Drzavljanstvo" GridPane.columnIndex="0" GridPane.rowIndex="14"/>
+    <Text fx:id="drzavljanstvo" GridPane.columnIndex="1" GridPane.rowIndex="14"/>
+    <Label text="Nacionalnost" GridPane.columnIndex="0" GridPane.rowIndex="15"/>
+    <Text fx:id="nacionalnost" GridPane.columnIndex="1" GridPane.rowIndex="15"/>
+    <Label text="br licne" GridPane.columnIndex="0" GridPane.rowIndex="16"/>
+    <Text fx:id="brojLicneKarteTf" GridPane.columnIndex="1" GridPane.rowIndex="16"/>
+    <Label text="Izdato" GridPane.columnIndex="0" GridPane.rowIndex="17"/>
+    <Text fx:id="licnuKartuIzdaoTf" GridPane.columnIndex="1" GridPane.rowIndex="17"/>
+    <Label text="Srednja skola" GridPane.columnIndex="0" GridPane.rowIndex="18"/>
+    <Text fx:id="srednjeSkola" GridPane.columnIndex="1" GridPane.rowIndex="18"/>
+    <Label text="Uspeh srednja" GridPane.columnIndex="0" GridPane.rowIndex="19"/>
+    <Text fx:id="uspehSrednjaSkolaTf" GridPane.columnIndex="1" GridPane.rowIndex="19"/>
+    <Label text="Uspeh prijmeni" GridPane.columnIndex="0" GridPane.rowIndex="20"/>
+    <Text fx:id="uspehPrijemniTf" GridPane.columnIndex="1" GridPane.rowIndex="20"/>
+    <Label text="Polozeni predmeti" GridPane.columnIndex="0" GridPane.rowIndex="21"/>
+    <Text fx:id="polozeniPredmeti" GridPane.columnIndex="1" GridPane.rowIndex="21"/>
+    <Label text="Slusa predmete" GridPane.columnIndex="0" GridPane.rowIndex="22"/>
+    <Text fx:id="slusaniPredmeti" GridPane.columnIndex="1" GridPane.rowIndex="22"/>
+
+
+    <Label text="Ulica" GridPane.columnIndex="2" GridPane.rowIndex="10"/>
+    <TextField fx:id="novaUlica" GridPane.columnIndex="3" GridPane.rowIndex="10"/>
+    <Label text="Mesto " GridPane.columnIndex="2" GridPane.rowIndex="11"/>
+    <TextField fx:id="novoMestoStanovanja" GridPane.columnIndex="3" GridPane.rowIndex="11"/>
+    <Label text="br ulice" GridPane.columnIndex="2" GridPane.rowIndex="12"/>
+    <TextField fx:id="noviBrojUlice" GridPane.columnIndex="3" GridPane.rowIndex="12"/>
+    <Button onAction="#preseljenje" text="Preselio se" GridPane.columnIndex="3" GridPane.rowIndex="13"/>
+
+    <Button onAction="#handleOpenTokStudija" text="Tok studija" GridPane.columnIndex="1" GridPane.rowIndex="24"/>
+
+</GridPane>

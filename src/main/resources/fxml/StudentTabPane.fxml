@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.BorderPane?>
+<TabPane xmlns:fx="http://javafx.com/fxml" fx:controller="studsluzba.client.fxmlcontrollers.FindStudentController">
+
+    <Tab text="Dosije Studenta">
+        <BorderPane>
+            <center>
+                <fx:include source="openDosije.fxml"/>
+            </center>
+        </BorderPane>
+    </Tab>
+    <Tab text="Predmete koje student slusa">
+        <BorderPane>
+            <center>
+                <fx:include source="SlusaPredmet.fxml"/>
+            </center>
+        </BorderPane>
+    </Tab><Tab text="Predemeti koje je student polozio">
+    <BorderPane>
+        <center>
+            <fx:include source="PolozeniPredmeti.fxml"/>
+        </center>
+    </BorderPane>
+</Tab>
+
+
+</TabPane>

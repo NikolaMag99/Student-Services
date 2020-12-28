@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<GridPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" alignment="center" hgap="10"
+          vgap="10" fx:controller="studsluzba.client.fxmlcontrollers.AddIspitniRokController">
+
+    <Label text="Datum pocetka" GridPane.halignment="RIGHT" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+    <DatePicker fx:id="datumPocetkaDp" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+    <Label text="Datum zavrsetka" GridPane.halignment="RIGHT" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+    <DatePicker fx:id="datumZavrsetkaDp" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+    <Label text="Skolska godina" GridPane.halignment="RIGHT" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+    <ComboBox fx:id="skolskaGodinaCb" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+    <Button onAction="#addIspitniRok" text="Dodaj" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+
+
+</GridPane>

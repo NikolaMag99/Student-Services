@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<BorderPane fx:id="mainPane" prefHeight="600" prefWidth="1200" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="studsluzba.client.fxmlcontrollers.MainWindowController">
+
+    <top>
+
+        <fx:include source="menuBar.fxml"/>
+    </top>
+
+</BorderPane>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<TabPane xmlns:fx="http://javafx.com/fxml" fx:controller="studsluzba.client.fxmlcontrollers.FindStudentController">
+    <Tab text="Pretraga studenta po indeksu">
+        <BorderPane>
+            <center>
+                <GridPane alignment="center" hgap="10" vgap="10">
+                    <Label text="Broj indeksa" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+                    <TextField fx:id="pretragaBrojaIndeksaTf" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+                    <Label text="Godina" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+                    <TextField fx:id="pretragaGodinaIndeksaTf" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+                    <ComboBox fx:id="pretragaSmerCb" GridPane.columnIndex="3"
+                              GridPane.rowIndex="0"/>
+
+
+                    <HBox alignment="bottom_right" spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                        <Button text="Find" onAction="#findStudentByIndex"/>
+                    </HBox>
+                </GridPane>
+            </center>
+        </BorderPane>
+    </Tab>
+
+    <Tab text="Pretraga studenta po imenu">
+        <HBox alignment="center">
+            <GridPane alignment="center" hgap="10" vgap="10">
+                <Label text="Ime" GridPane.halignment="RIGHT" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+                <TextField fx:id="imeTf" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+                <Label text="Prezime" GridPane.halignment="RIGHT" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+                <TextField fx:id="prezimeTf" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+                <HBox alignment="bottom_right" spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                    <Button text="Find" onAction="#findStudentByName"/>
+                </HBox>
+            </GridPane>
+        </HBox>
+    </Tab>
+
+    <Tab text="Promena indeksa">
+        <HBox alignment="center">
+            <GridPane alignment="center" hgap="10" vgap="10">
+                <padding>
+                    <Insets left="40.0"/>
+                </padding>
+                <Label text="Novi broj indeksa" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+                <TextField fx:id="NovBrojIndeksaTf" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+                <Label text="Godina" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+                <TextField fx:id="NovaGodinaIndeksaTf" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+                <ComboBox fx:id="NovSmerCb" GridPane.columnIndex="3"
+                          GridPane.rowIndex="0"/>
+
+
+                <HBox alignment="bottom_right" spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                    <Button text="Add" onAction="#changeIndex"/>
+                </HBox>
+            </GridPane>
+
+        </HBox>
+
+    </Tab>
+
+</TabPane>

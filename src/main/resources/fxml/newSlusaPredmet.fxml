@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.*?>
+<BorderPane fx:id="menu" prefHeight="428.0" prefWidth="581.0" xmlns="http://javafx.com/javafx/8.0.171"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="studsluzba.client.fxmlcontrollers.NewSlusaPredmetController">
+
+    <top>
+        <fx:include source="menuBar.fxml"/>
+    </top>
+    <center>
+        <GridPane alignment="center" hgap="10" vgap="10">
+            <Label text="Izaberi drzi predmet" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+            <ComboBox fx:id="drziPredmetCb" GridPane.columnIndex="1"
+                      GridPane.rowIndex="1"/>
+            <HBox alignment="bottom_right" spacing="10" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                <Button onAction="#handleOpenDrziPredmet" text="Dodaj novi predmet"/>
+            </HBox>
+        </GridPane>
+    </center>
+    <bottom>
+        <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </padding>
+            <Button text="Vidi slusa predmet" onAction="#handleOpenSlusaPredmet"/>
+            <children>
+                <TableView fx:id="indexiTable">
+                    <columns>
+                        <TableColumn prefWidth="75.0" text="Broj">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="broj"/>
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="75.0" text="Godina">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="godina"/>
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="600.0" text="Student">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="student"/>
+                            </cellValueFactory>
+                        </TableColumn>
+                    </columns>
+                </TableView>
+            </children>
+        </VBox>
+
+    </bottom>
+
+</BorderPane>

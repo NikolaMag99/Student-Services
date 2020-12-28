@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="studsluzba.client.fxmlcontrollers.SpiskoviStudenataIzvestajiController">
+
+<top>
+	<fx:include source="menuBar.fxml"/>
+</top>
+
+<center>
+	<VBox alignment="center" spacing="8">
+	<Label text="Spisak studenata koji su izasli na ispit" />
+	<HBox alignment="center" spacing="8">
+		<ComboBox fx:id="predmetiCb" />
+		<ComboBox fx:id="ispitniRokoviCb" />
+		<Button text="Generiši" onAction="#handleGenerisiSpisakPoStudProgramu"/>
+	</HBox>
+	</VBox>
+
+</center>
+
+</BorderPane>

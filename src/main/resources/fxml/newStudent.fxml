@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<BorderPane fx:id="mainPane" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="studsluzba.client.fxmlcontrollers.StudentController">
+
+    <top>
+        <fx:include source="menuBar.fxml"/>
+    </top>
+
+    <center>
+        <BorderPane>
+            <center>
+                <fx:include source="studentPodaciTabPane.fxml"/>
+            </center>
+        </BorderPane>
+
+    </center>
+
+
+</BorderPane>
